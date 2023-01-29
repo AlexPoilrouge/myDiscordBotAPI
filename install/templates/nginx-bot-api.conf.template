@@ -1,12 +1,12 @@
 server{
     listen 80;
-    server_name ${BOT_API_ACCCESS_SERVER_NAMES};
+    server_name ${BOT_API_ACCESS_SERVER_NAMES};
 
     access_log /var/log/nginx/bot-api-access.log;
     error_log /var/log/nginx/bot-api-error.log;
 
     location ~ ^/bot/ {
         rewrite ^/bot/(.*) /$1 break;
-        proxy_pass http://${BOT_API_ACCCESS_ADDR}:${BOT_API_ACCESS_PORT};
+        proxy_pass http://${BOT_API_ACCESS_ADDR}:${BOT_API_ACCESS_PORT};
     }
 }

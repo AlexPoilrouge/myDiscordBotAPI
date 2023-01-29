@@ -1,0 +1,7 @@
+
+    location ~ ^/bot/ {
+        # for debug only
+        # add_header Access-Control-Allow-Origin *;
+        rewrite ^/bot/(.*) /$1 break;
+        proxy_pass http://${BOT_API_ACCESS_ADDR}:${BOT_API_ACCESS_PORT};
+    }

@@ -23,7 +23,7 @@ export TEMPLATE_DEST_BOT_API_SERVICE="/etc/systemd/system/bot-api.service"
 
 export BOT_API_ACCESS_ADDR="127.0.0.1"
 export BOT_API_ACCESS_PORT="6029"
-export BOT_API_ACCCESS_SERVER_NAMES="localhost www.localhost"
+export BOT_API_ACCESS_SERVER_NAMES="localhost www.localhost"
 
 export TEMPLATE_SRC_BOT_API_ACCESS="nginx-bot-api.conf.template"
 export TEMPLATE_DEST_BOT_API_ACCESS="/etc/nginx/sites-enabled/nginx-bot-api.conf"
