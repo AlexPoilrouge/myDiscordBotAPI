@@ -8,6 +8,6 @@ WantedBy=multi-user.target
 Type=simple
 User=${BOT_API_SERVICE_USER}
 WorkingDirectory=${BOT_API_SERVICE_WORKDIR}
-ExecStart=node kart.js
+ExecStart=node api.js
 Restart=on-failure
 StandardOutput=journal
