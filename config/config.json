@@ -1,0 +1,15 @@
+{
+    "api":
+    {
+        "HOST": "localhost:6767",
+        "BASE_PATH": "/",
+        "HAS_HTTPS": false
+    },
+
+    "discord":
+    {
+        "BOT_TOKEN_ID": ""
+    },
+    
+    "PORT": 6767
+}

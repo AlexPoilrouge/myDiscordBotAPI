@@ -1,0 +1,13 @@
+[Unit]
+Descritpion=StrashAPI for kart stuff
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+Type=simple
+User=${BOT_API_SERVICE_USER}
+WorkingDirectory=${BOT_API_SERVICE_WORKDIR}
+ExecStart=node kart.js
+Restart=on-failure
+StandardOutput=journal

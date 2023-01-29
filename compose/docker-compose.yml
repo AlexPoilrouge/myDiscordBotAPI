@@ -1,0 +1,25 @@
+services:
+  reverseproxy:
+    image: my_nginx:0.0.0
+    build:
+      context: ..
+      dockerfile: compose/Dockerfile.nginx
+    container_name: my_nginx
+    ports:
+      - "80:80"
+      - "81:81"
+      - "443:443"
+    links:
+      - "bot_api:botapi"
+  
+  bot_api:
+    image: botapi:0.0.0
+    build:
+      context: ..
+      dockerfile: Dockerfile
+      args:
+        values_script : compose/values.api.sh
+    container_name: botapi
+    ports:
+      - "6767:6767"
+

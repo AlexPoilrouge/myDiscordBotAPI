@@ -1,0 +1,14 @@
+# This docker file is used for testing puposes only
+# Aimed to be used with the docker-compose.yml found aside
+#  and in the context of the project's root dir
+
+FROM nginx:latest
+
+COPY ./install /var/app/install
+COPY ./compose /var/app/install
+WORKDIR /var/app/install
+
+RUN rm -vf /etc/nginx/conf.d/*.conf
+RUN rm -vf templates/{strash-api.service.template,config.json.template}
+
+RUN /bin/bash install.sh values.nginx.sh

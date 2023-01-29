@@ -1,0 +1,15 @@
+{
+    "api":
+    {
+        "HOST": "${CONFIG_API_HOST}",
+        "BASE_PATH": "${CONFIG_API_BASE_PATH}",
+        "HAS_HTTPS": ${CONFIG_API_HAS_HTTPS}
+    },
+
+    "discord":
+    {
+        "BOT_TOKEN_ID": "${BOT_DISCORD_TOKEN}"
+    },
+    
+    "PORT": 6767
+}
