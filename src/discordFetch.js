@@ -14,8 +14,6 @@ const DISCORD_IMG_BASE_URL='https://cdn.discordapp.com'
 function fetchAvatarUrl(){
     let req_url=`${DISCORD_API_BASE_URL}/${DISCORD_REQ_USER}`
 
-    hereLog(`--> ${req_url} + ${config.discord.BOT_TOKEN_ID}`)
-
     return fetch(
             req_url,
             {    headers: { 

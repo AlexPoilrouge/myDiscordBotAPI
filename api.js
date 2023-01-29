@@ -21,8 +21,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.listen(config.PORT, ()=>console.log(`listening on ${config.PORT}`));
 
 app.get('/avatar.png', function(req, res){
-    hereLog("yeah fetching avatar???")
-
     fetchAvatarUrl()
         .then(url => res.redirect(url))
         .catch(err => {
