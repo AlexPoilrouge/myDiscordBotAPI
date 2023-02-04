@@ -8,7 +8,8 @@
 
     "discord":
     {
-        "BOT_TOKEN_ID": ""
+        "BOT_TOKEN_ID": "",
+        "INVITE_ID": ""
     },
     
     "PORT": 6767

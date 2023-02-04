@@ -8,7 +8,8 @@
 
     "discord":
     {
-        "BOT_TOKEN_ID": "${BOT_DISCORD_TOKEN}"
+        "BOT_TOKEN_ID": "${BOT_DISCORD_TOKEN}",
+        "INVITE_ID": "${BOT_DISCORD_STRASH_INVIT}"
     },
     
     "PORT": 6767

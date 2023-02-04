@@ -31,3 +31,13 @@ app.get('/avatar.png', function(req, res){
             hereLog(`(fetchAvatar) - error fetching avatar img - ${err}`)
         })
 });
+
+app.get('/access', function(req, res){
+    res.redirect(
+        `https://discord.gg/${config.discord.INVITE_ID}`
+    )
+        .then(url => res.redirect(url))
+        .catch(err => {
+            hereLog(`(fetchInvite) - error ${err}`)
+        })
+});

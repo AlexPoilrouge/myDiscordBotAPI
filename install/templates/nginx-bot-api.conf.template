@@ -9,4 +9,9 @@ server{
         rewrite ^/bot/(.*) /$1 break;
         proxy_pass http://${BOT_API_ACCESS_ADDR}:${BOT_API_ACCESS_PORT};
     }
+
+    location ~ ^/invit {
+        rewrite ^/invit /access break;
+        proxy_pass http://${BOT_API_ACCESS_ADDR}:${BOT_API_ACCESS_PORT};
+    }
 }

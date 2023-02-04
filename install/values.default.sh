@@ -7,6 +7,7 @@ export CONFIG_API_BASE_PATH="/"
 export CONFIG_API_HAS_HTTPS="false"
 
 export BOT_DISCORD_TOKEN=""
+export BOT_DISCORD_STRASH_INVIT="wJsCfeKF7m"
 
 export TEMPLATE_SRC_CONFIG_API="config.json.template"
 export TEMPLATE_DEST_CONFIG_API="${ROOT_DIR}/config/config.json"
